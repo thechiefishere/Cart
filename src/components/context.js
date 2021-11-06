@@ -1,5 +1,4 @@
 import React, { useContext, useReducer } from "react";
-import { RiTodoFill } from "react-icons/ri";
 import data from "../data";
 
 const AppContext = React.createContext();
@@ -11,7 +10,6 @@ export const ACTIONS = {
 };
 
 const reducer = (gadgets, action) => {
-  console.log("I enterred reducer");
   switch (action.type) {
     case ACTIONS.DELETE_GADGET:
       return gadgets.filter((gadget) => gadget.id !== action.payload);

@@ -5,12 +5,13 @@ const Item = ({ gadget }) => {
   const { dispatch } = useGlobalContext();
 
   return (
-    <article>
+    <article className="item">
       <img src={gadget.img} alt={gadget.title} />
-      <div>
+      <div className="item-details">
         <h4>{gadget.title}</h4>
         <h5>{gadget.price}</h5>
         <button
+          className="remove"
           onClick={() =>
             dispatch({ type: ACTIONS.DELETE_GADGET, payload: gadget.id })
           }
@@ -18,7 +19,7 @@ const Item = ({ gadget }) => {
           remove
         </button>
       </div>
-      <div>
+      <div className="item-num">
         <RiArrowUpSLine
           onClick={() =>
             dispatch({

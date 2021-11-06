@@ -5,13 +5,13 @@ const Bag = () => {
   const { gadgets } = useGlobalContext();
 
   return (
-    <section>
-      <h1>YOUR BAG</h1>
+    <section className="bag">
+      <h1 className="title">YOUR BAG</h1>
       {gadgets.map((gadget) => {
         return <Item key={gadget.id} gadget={gadget} />;
       })}
       <hr />
-      <div>
+      <div className="footer">
         <h3>Total</h3>
         <p>
           $

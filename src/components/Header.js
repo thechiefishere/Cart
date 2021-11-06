@@ -5,15 +5,15 @@ const Header = () => {
   const { gadgets } = useGlobalContext();
 
   return (
-    <header>
+    <header className="header">
       <h1>UseReducer</h1>
-      <div>
-        <p>
+      <div className="purse-container">
+        <p className="item-count">
           {gadgets.reduce((tot, item) => {
             return item.amount + tot;
           }, 0)}
         </p>
-        <HiShoppingBag />
+        <HiShoppingBag className="purse" />
       </div>
     </header>
   );

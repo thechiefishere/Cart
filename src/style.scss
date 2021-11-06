@@ -1,0 +1,81 @@
+$primary-color: rgb(6, 94, 167);
+$primary-light: rgb(132, 196, 248);
+$primary-bg: rgb(226, 232, 236);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $primary-bg;
+}
+.header {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 1.3em;
+  padding: 15px 25px;
+  .purse-container {
+    align-self: center;
+    .purse {
+      font-size: 2.2rem;
+      position: relative;
+    }
+    .item-count {
+      margin-left: 25px;
+      position: absolute;
+      background-color: $primary-light;
+      border-radius: 40%;
+      padding: 2px;
+    }
+  }
+}
+.bag {
+  width: 90%;
+  margin: 100px auto;
+  .title {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .item {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 100px;
+    }
+    &-details {
+      margin-right: 35vw;
+      width: 40%;
+      font-size: 1.1em;
+      h5,
+      h4 {
+        margin-bottom: 5px;
+      }
+      .remove {
+        border: none;
+        background-color: transparent;
+      }
+    }
+    &-num {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: $primary-color;
+      font-size: 1.4em;
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bag {
+    width: 60%;
+  }
+}

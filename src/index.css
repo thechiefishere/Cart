@@ -1,13 +1,82 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #e2e8ec;
 }
+
+.header {
+  background-color: #065ea7;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 1.3em;
+  padding: 15px 25px;
+}
+.header .purse-container {
+  align-self: center;
+}
+.header .purse-container .purse {
+  font-size: 2.2rem;
+  position: relative;
+}
+.header .purse-container .item-count {
+  margin-left: 25px;
+  position: absolute;
+  background-color: #84c4f8;
+  border-radius: 40%;
+  padding: 2px;
+}
+
+.bag {
+  width: 90%;
+  margin: 100px auto;
+}
+.bag .title {
+  text-align: center;
+  font-size: 2.5em;
+}
+.bag .item {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.bag .item img {
+  width: 100px;
+}
+.bag .item-details {
+  margin-right: 35vw;
+  width: 40%;
+  font-size: 1.1em;
+}
+.bag .item-details h5,
+.bag .item-details h4 {
+  margin-bottom: 5px;
+}
+.bag .item-details .remove {
+  border: none;
+  background-color: transparent;
+}
+.bag .item-num {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #065ea7;
+  font-size: 1.4em;
+}
+.bag .footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+
+@media (min-width: 1000px) {
+  .bag {
+    width: 60%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
